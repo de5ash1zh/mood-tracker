@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mood Tracker</h1>
+
+      <!-- Mood selection area -->
+      <div class="moods">
+        <!-- Mood emojis user can select -->
+        <span class="mood" data-mood="😄">😄</span>
+        <span class="mood" data-mood="😢">😢</span>
+        <span class="mood" data-mood="😐">😐</span>
+        <span class="mood" data-mood="🤩">🤩</span>
+        <span class="mood" data-mood="😡">😡</span>
+      </div>
+
+      <h2>Your Mood Logs</h2>
+
+      <!-- Buttons to switch between different views -->
+      <div class="view-buttons">
+        <button id="allView">All</button>
+        <button id="dayView">Today</button>
+        <button id="weekView">This Week</button>
+        <button id="monthView">This Month</button>
+        <button id="calendarView">Calendar View</button>
+      </div>
+
+      <!-- Area where logs will be displayed -->
+      <div id="logDisplay"></div>
+      <div id="calendarDisplay"></div>
+    </div>
+
+    <!-- Link to the JavaScript file for functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
